@@ -9,6 +9,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.4/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Poppins:wght@500&family=Roboto+Condensed:ital,wght@1,300&family=Roboto+Mono&family=Work+Sans&display=swap"
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/9ea94a0d88.js" crossorigin="anonymous"></script>
 
     <script>
         tailwind.config = {
@@ -22,14 +28,20 @@
         }
     </script>
 
+    <style>
+        .font-universal {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+
 </head>
 
 
-<body>
+<body class="font-universal">
 
 
 
-    <header class="mb-28">
+    <header class="lg:mb-28 mb-10">
 
 
         <!-- Navbar -->
@@ -70,11 +82,12 @@
                     <img class="w-10 h-12" src="images/logo.png" alt="">
                     <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
                 </div>
-                
-                    <input type="text" placeholder="Search here" class="bg-white text-xs lg:text-base rounded-full input input-ghost lg:w-full max-w-xs" />
-                
+
+                <input type="text" placeholder="Search here"
+                    class="bg-white text-xs lg:text-base rounded-full input input-ghost w-1/4 lg:w-full max-w-xs" />
+
             </div>
-    
+
 
         </nav>
 
@@ -89,67 +102,68 @@
 
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
-                  <img src="./images/banner1.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle">❮</a> 
-                    <a href="#slide2" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide2" class="carousel-item relative w-full">
-                  <img src="./images/banner2.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a> 
-                    <a href="#slide3" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide3" class="carousel-item relative w-full">
-                  <img src="./images/banner3.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a> 
-                    <a href="#slide4" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide4" class="carousel-item relative w-full">
-                  <img src="./images/banner4.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle">❮</a> 
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                  </div>
+                    <img src="./images/banner1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
                 </div>
-              </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./images/banner2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./images/banner3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="./images/banner4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
 
 
 
 
 
 
-              <div class="hidden relative lg:flex lg:justify-center lg:items-center  lg:w-[850px] h-60 bg-white shadow-2xl mx-auto mt-[-120px] z-20">
+            <div
+                class="hidden relative lg:flex lg:justify-center lg:items-center  lg:w-[850px] h-60 bg-white shadow-2xl mx-auto mt-[-120px] z-20">
 
                 <div class="text-center">
                     <img src="images/fruit1.png" alt="">
                     <p>Lichi</p>
                 </div>
-    
+
                 <div class="text-center">
                     <img src="images/fruit2.png" alt="">
                     <p>Orange</p>
                 </div>
-    
+
                 <div class="text-center">
                     <img src="images/fruit3.png" alt="">
                     <p>Mango</p>
                 </div>
-    
+
                 <div class="text-center">
                     <img src="images/fruit4.png" alt="">
                     <p>Strawberry</p>
                 </div>
-    
+
                 <div class="text-center">
                     <img src="images/fruit5.png" alt="">
                     <p>Mango</p>
                 </div>
-    
+
             </div>
         </div>
 
@@ -163,6 +177,154 @@
 
 
     <main>
+
+
+        <!-- Shop Section -->
+        <Section class="container mx-auto px-4 space-y-5 mb-10">
+
+            <div class="space-y-8">
+
+                <div class="flex flex-col lg:flex-row justify-between items-center space-y-5">
+
+                    <div class="space-y-5 text-center lg:text-left">
+                        <h2 class="text-5xl font-extrabold">Deal of the day</h2>
+                        <p>Contrary to popular belief, is not simply random text. It has roots in a piece of <br>classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                    </div>
+
+                    <div class="flex lg:space-x-5 space-x-2 justify-center">
+                        <div class="space-y-3">
+                            <h1 class="text-5xl font-extrabold">29</h1>
+                            <p>Days</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl">:</p>
+                        </div>
+                        <div class="space-y-3">
+                            <h1 class="text-5xl font-extrabold">15</h1>
+                            <p>Hours</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl">:</p>
+                        </div>
+                        <div class="space-y-3">
+                            <h1 class="text-5xl font-extrabold">25</h1>
+                            <p>Minutes</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl">:</p>
+                        </div>
+                        <div class="space-y-3">
+                            <h1 class="text-5xl font-extrabold">08</h1>
+                            <p>Seconds</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="flex gap-3 flex-col lg:flex-row">
+
+
+                        <div class="card lg:w-90 w-50 bg-base-100 shadow-xl">
+                            <figure class="px-10 pt-10">
+                              <img src="images/fruit6.png" alt="Shoes" class="rounded-xl w-[100px] h-[120px]" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                              <h2 class="card-title">12.90$ - 18.85$</h2>
+                              <hr class="h-3 w-[244px] space-y-3">
+                              <p>Apples</p>
+                              <div>
+                                <i class="fa-solid fa-star" style="color: #ff4000;"></i>
+                                <i class="fa-solid fa-star-half-stroke" style="color: #ff4000;"></i>
+                                <i class="fa-regular fa-star" style="color: #ff3300;"></i>
+                                <i class="fa-regular fa-star" style="color: #ff3300;"></i>
+                                <i class="fa-regular fa-star" style="color: #ff3300;"></i>
+                              </div>
+                              <p class="text-red-600 text-lg">Details</p>
+                            </div>
+                          </div>
+
+
+
+
+                        <div class="card lg:w-90 w-50 bg-base-100 shadow-xl">
+                            <figure class="px-10 pt-10">
+                              <img src="images/fruit7.png" alt="Shoes" class="rounded-xl w-[100px] h-[120px]" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                              <h2 class="card-title">12.90$ - 18.85$</h2>
+                              <hr class="h-3 w-[244px] space-y-3">
+                              <p>Orange</p>
+                              <div>
+                                <i class="fa-solid fa-star" style="color: #ff4000;"></i>
+                                <i class="fa-solid fa-star-half-stroke" style="color: #ff4000;"></i>
+                                <i class="fa-regular fa-star" style="color: #ff3300;"></i>
+                                <i class="fa-regular fa-star" style="color: #ff3300;"></i>
+                                <i class="fa-regular fa-star" style="color: #ff3300;"></i>
+                              </div>
+                              <p class="text-red-600 text-lg">Details</p>
+                            </div>
+                          </div>
+
+
+
+
+                        <div class="card lg:w-90 w-50 bg-base-100 shadow-xl">
+                            <figure class="px-10 pt-10">
+                              <img src="images/fruit8.png" alt="Shoes" class="rounded-xl w-[100px] h-[120px]" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                              <h2 class="card-title">12.90$ - 18.85$</h2>
+                              <hr class="h-3 w-[244px] space-y-3">
+                              <p>Red Dragon</p>
+                              <div>
+                                <i class="fa-solid fa-star" style="color: #ff4000;"></i>
+                                <i class="fa-solid fa-star-half-stroke" style="color: #ff4000;"></i>
+                                <i class="fa-regular fa-star" style="color: #ff3300;"></i>
+                                <i class="fa-regular fa-star" style="color: #ff3300;"></i>
+                                <i class="fa-regular fa-star" style="color: #ff3300;"></i>
+                              </div>
+                              <p class="text-red-600 text-lg">Details</p>
+                            </div>
+                          </div>
+
+
+
+
+                        <div class="card lg:w-90 w-50 bg-base-100 shadow-xl">
+                            <figure class="px-10 pt-10">
+                              <img src="images/fruit9.png" alt="Shoes" class="rounded-xl w-[100px] h-[120px]" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                              <h2 class="card-title">12.90$ - 18.85$</h2>
+                              <hr class="h-3 w-[244px] space-y-3">
+                              <p>Banana</p>
+                              <div>
+                                <i class="fa-solid fa-star" style="color: #ff4000;"></i>
+                                <i class="fa-solid fa-star-half-stroke" style="color: #ff4000;"></i>
+                                <i class="fa-regular fa-star" style="color: #ff3300;"></i>
+                                <i class="fa-regular fa-star" style="color: #ff3300;"></i>
+                                <i class="fa-regular fa-star" style="color: #ff3300;"></i>
+                              </div>
+                              <p class="text-red-600 text-lg">Details</p>
+                            </div>
+                          </div>
+
+
+
+
+
+                </div>
+
+                <div class="text-center">
+                    <button class="btn bg-[#F85559] text-white">Shop All</button>
+                </div>
+
+            </div>
+
+        </Section>
+
+
 
 
     </main>
